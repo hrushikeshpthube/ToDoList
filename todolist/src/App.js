@@ -7,33 +7,43 @@ const APP = () => {
   const InputEvent = (event) => {
     let val = event.target.value;
     return (
-      setitem(val)
+      setItem(val)
     )
   }
 
   const AddItem = () => {
-    console.log("item added");
-    setArray((OldItems) => {
-      return [...OldItems, inputitem]
-    }
-    );
+    if (inputitem.length === 0) {
+      alert("Cannot add empty item.Please add item  with description text");
 
+    }
+    else {
+
+      console.log("item added");
+      setArray((OldItems) => {
+        return [...OldItems, inputitem]
+
+      }
+      );
+      setItem("");
+      //whenevr item is added then clear inout field
+    }
   }
 
 
-  const [inputitem, setitem] = useState("")
+  const [inputitem, setItem] = useState("")
   const [ItemArray, setArray] = useState([]);
   return (
     <>
       <div>
         <h1>To Do List</h1><br></br>
-        <input type="text" placeholder="Add item" onChange={InputEvent} /><br></br>
+        <input type="text" placeholder="Add item" value={inputitem} onChange={InputEvent} /><br></br>
         <button onClick={AddItem} >+</button>
         <ol>
-          {ItemArray.map((item) => {
+          {ItemArray.map((item, index) => {
+
             return (
               <>
-                <li>{item}</li>
+                <li>{index} {item}</li>
               </>
             )
           })}
