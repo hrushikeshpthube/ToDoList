@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ToDoList from "./ToDoList";
 
 
 
@@ -29,6 +30,16 @@ const APP = () => {
     }
   }
 
+  const DeleteItem = (id) => {
+    console.log("item Deleted");
+    setArray((OldArray) => {
+      return OldArray.filter((arrElem, index) => {
+        return index !== id
+      });
+    });
+    //ItemArray.filter()
+  }
+
 
   const [inputitem, setItem] = useState("")
   const [ItemArray, setArray] = useState([]);
@@ -42,9 +53,7 @@ const APP = () => {
           {ItemArray.map((item, index) => {
 
             return (
-              <>
-                <li>{index} {item}</li>
-              </>
+              <ToDoList text={item} key={index} id={index} onSelect={DeleteItem} />
             )
           })}
 
