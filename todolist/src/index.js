@@ -1,13 +1,25 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import IncToDO from './IncToDO';
+import APP from './App';
 
+// ReactDOM.render(
+//   <>
+//     <IncToDO />
+//     <hr></hr>
+//     <APP />
+//   </>
+//   , document.getElementById("root")
+// )
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    <br></br>
+    <IncToDO />
   </React.StrictMode>
 );
 

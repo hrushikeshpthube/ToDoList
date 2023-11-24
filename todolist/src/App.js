@@ -49,6 +49,7 @@ const APP = () => {
         <h1 >To Do List</h1><br></br>
         <input type="text" placeholder="Add item" value={inputitem} onChange={InputEvent} /><br></br>
         <button onClick={AddItem} >+</button>
+        <h2>List of items as Below</h2>
         <ol>
           {ItemArray.map((item, index) => {
 
