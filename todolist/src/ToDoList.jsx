@@ -5,14 +5,14 @@ const ToDoList = (props) => {
     return (
 
 
-        <>
+        <div className="todo-item">
             <button onClick={
                 () => {
                     props.onSelect(props.id)
                 }
-            }>-</button>
+            } className="delete-btn">-</button>
             <li> {props.text}</li>
-        </>
+        </div>
 
     )
 }

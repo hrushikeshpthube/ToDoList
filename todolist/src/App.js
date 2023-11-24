@@ -45,8 +45,8 @@ const APP = () => {
   const [ItemArray, setArray] = useState([]);
   return (
     <>
-      <div>
-        <h1>To Do List</h1><br></br>
+      <div className="main-Div">
+        <h1 >To Do List</h1><br></br>
         <input type="text" placeholder="Add item" value={inputitem} onChange={InputEvent} /><br></br>
         <button onClick={AddItem} >+</button>
         <ol>
