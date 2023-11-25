@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ToDoList from "./ToDoList";
+import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 
 
 
@@ -48,7 +49,7 @@ const APP = () => {
       <div className="main-Div">
         <h1 >To Do List</h1><br></br>
         <input type="text" placeholder="Add item" value={inputitem} onChange={InputEvent} /><br></br>
-        <button onClick={AddItem} >+</button>
+        <button onClick={AddItem} ><AddOutlinedIcon /></button>
         <h2>List of items as Below</h2>
         <ol>
           {ItemArray.map((item, index) => {

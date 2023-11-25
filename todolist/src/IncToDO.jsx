@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import AddIcon from '@mui/icons-material/Add';
+import RemoveIcon from '@mui/icons-material/Remove';
 const IncToDO = () => {
 
     const [num, setNum] = useState(0)
@@ -23,8 +25,8 @@ const IncToDO = () => {
         <div className="main-Div">
             <h1>Increment Decrement Demo Tab </h1>
             <h1 >Output= {num}</h1>
-            <button onClick={IncreNum}>Increment</button>
-            <button onClick={DecreNum}>Decrement</button>
+            <button onClick={IncreNum}><AddIcon /></button>
+            <button onClick={DecreNum}><RemoveIcon /></button>
 
         </div>
     )
