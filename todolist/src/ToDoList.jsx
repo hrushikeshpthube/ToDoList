@@ -1,5 +1,6 @@
 import React from "react";
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+import Tooltip from '@mui/material/Tooltip';
 
 
 const ToDoList = (props) => {
@@ -11,7 +12,7 @@ const ToDoList = (props) => {
                 () => {
                     props.onSelect(props.id)
                 }
-            } className="delete-btn"><DeleteForeverIcon /></button>
+            } className="delete-btn"><Tooltip title="Delete"><DeleteForeverIcon /></Tooltip></button>
             <li> {props.text}</li>
         </div>
 
