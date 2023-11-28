@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import IncToDO from './IncToDO';
 import APP from './App';
+import ToDOCross from './ToDOCross';
 
 // ReactDOM.render(
 //   <>
@@ -17,9 +18,8 @@ import APP from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-    <br></br>
-    <IncToDO />
+   
+    <ToDOCross />
   </React.StrictMode>
 );
 
