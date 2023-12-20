@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import IncToDO from './IncToDO';
 import APP from './App';
 import ToDOCross from './ToDOCross';
+import Acomp from './UseContextDemo/Acomp';
+import ToDoList from './ToDoList';
 
 // ReactDOM.render(
 //   <>
@@ -19,7 +21,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
    
-    <ToDOCross />
+    <App />
   </React.StrictMode>
 );
 
