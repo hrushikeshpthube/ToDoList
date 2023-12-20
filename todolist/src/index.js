@@ -3,11 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import IncToDO from './IncToDO';
-import APP from './App';
-import ToDOCross from './ToDOCross';
-import Acomp from './UseContextDemo/Acomp';
-import ToDoList from './ToDoList';
+// import IncToDO from './IncToDO';
+// import ToDOCross from './ToDOCross';
+// import Acomp from './UseContextDemo/Acomp';
+// import ToDoList from './ToDoList';
 
 // ReactDOM.render(
 //   <>
